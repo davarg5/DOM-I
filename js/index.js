@@ -59,8 +59,29 @@ const cta_img = document.getElementById("cta-img");
 cta_img.setAttribute('src',siteContent["cta"]["img-src"]);
 
 //main content
+//features
 const h4 = document.querySelectorAll("h4");
 h4[0].textContent = siteContent["main-content"]["features-h4"];
 const p = document.querySelectorAll("p");
 p[0].textContent = siteContent["main-content"]["features-content"];
-h4[0].textContent = siteContent["main-content"]["about-h4"];
+
+//about
+h4[1].textContent = siteContent["main-content"]["about-h4"];
+p[1].textContent = siteContent["main-content"]["about-content"];
+const main_img = document.getElementById("middle-img");
+main_img.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+//bottom content
+//services
+h4[2].textContent = siteContent["main-content"]["services-h4"];
+p[2].textContent = siteContent["main-content"]["services-content"];
+
+//product
+h4[3].textContent = siteContent["main-content"]["product-h4"];
+p[3].textContent = siteContent["main-content"]["product-content"];
+
+//vision
+h4[4].textContent = siteContent["main-content"]["vision-h4"];
+p[4].textContent = siteContent["main-content"]["vision-content"];
+
+//contact
