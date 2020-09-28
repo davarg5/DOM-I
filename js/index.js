@@ -50,9 +50,25 @@ links[3].textContent = siteContent["nav"]["nav-item-4"];
 links[4].textContent = siteContent["nav"]["nav-item-5"];
 links[5].textContent = siteContent["nav"]["nav-item-6"];
 
+const newLink1 = document.createElement("a");
+newLink1.textContent = "FAQ";
+newLink1.href = "#";
+document.querySelector("nav").append(newLink1);
+
+const newLink2 = document.createElement("a");
+newLink2.textContent = "Our Team";
+newLink2.href = "#";
+document.querySelector("nav").prepend(newLink2);
+
+//links.style.color = 'green';
+console.log(links);
+document.body.style.backgroundColor = "turquoise";
+
+
 //cta
 const h1 = document.querySelector("h1");
 h1.textContent = siteContent["cta"]["h1"];
+h1.textContent = "DOM\nIS\nAWESOME";
 const button = document.querySelector("button");
 button.textContent = siteContent["cta"]["button"];
 const cta_img = document.getElementById("cta-img");
@@ -85,3 +101,10 @@ h4[4].textContent = siteContent["main-content"]["vision-h4"];
 p[4].textContent = siteContent["main-content"]["vision-content"];
 
 //contact
+h4[5].textContent = siteContent["contact"]["contact-h4"];
+p[5].textContent = siteContent["contact"]["address"];
+p[6].textContent = siteContent["contact"]["phone"];
+p[7].textContent = siteContent["contact"]["email"];
+
+//footer 
+p[8].textContent = siteContent["footer"]["copyright"];
