@@ -60,8 +60,24 @@ newLink2.textContent = "Our Team";
 newLink2.href = "#";
 document.querySelector("nav").prepend(newLink2);
 
-//links.style.color = 'green';
-console.log(links);
+links[0].setAttribute("id", "green0")
+document.getElementById("green0").style.color = "green";
+links[1].setAttribute("id", "green1")
+document.getElementById("green1").style.color = "green";
+links[2].setAttribute("id", "green2")
+document.getElementById("green2").style.color = "green";
+links[3].setAttribute("id", "green3")
+document.getElementById("green3").style.color = "green";
+links[4].setAttribute("id", "green4")
+document.getElementById("green4").style.color = "green";
+links[5].setAttribute("id", "green5")
+document.getElementById("green5").style.color = "green";
+
+newLink1.setAttribute("id", "green6")
+document.getElementById("green6").style.color = "green";
+newLink2.setAttribute("id", "green7")
+document.getElementById("green7").style.color = "green";
+
 document.body.style.backgroundColor = "turquoise";
 
 
